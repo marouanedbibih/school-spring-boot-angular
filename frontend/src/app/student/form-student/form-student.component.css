@@ -1,0 +1,13 @@
+/* Styling for the table */
+.marouane-background {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  margin: 8px;
+  border: 16px solid #fff; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 16px;
+  background-color: #fff;
+  overflow: hidden;
+}

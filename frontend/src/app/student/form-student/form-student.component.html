@@ -1,0 +1,67 @@
+<div class="container mt-5 d-flex justify-content-center">
+  <div class="marouane-background w-75">
+    <h3 class="text-center mb-4">{{ isEdit ? "Edit" : "Create" }} Student</h3>
+    <form>
+      <div class="row mb-3">
+        <!-- First Name -->
+        <div class="col-md-6">
+          <label for="firstName" class="form-label">First Name</label>
+          <input
+            type="text"
+            id="firstName"
+            class="form-control"
+            placeholder="Enter first name"
+            required
+            name="firstName"
+            [(ngModel)]="student.firstName"
+          />
+        </div>
+        <!-- Last Name -->
+        <div class="col-md-6">
+          <label for="lastName" class="form-label">Last Name</label>
+          <input
+            type="text"
+            id="lastName"
+            class="form-control"
+            placeholder="Enter last name"
+            required
+            name="lastName"
+            [(ngModel)]="student.lastName"
+          />
+        </div>
+      </div>
+      <div class="mb-3">
+        <!-- Email -->
+        <label for="email" class="form-label">Email</label>
+        <input
+          type="email"
+          id="email"
+          class="form-control"
+          placeholder="Enter email"
+          required
+          name="email"
+          [(ngModel)]="student.email"
+        />
+      </div>
+      <div class="mb-3">
+        <!-- Phone -->
+        <label for="phone" class="form-label">Phone</label>
+        <input
+          type="tel"
+          id="phone"
+          class="form-control"
+          placeholder="Enter phone number"
+          required
+          name="phone"
+          [(ngModel)]="student.phone"
+        />
+      </div>
+      <!-- Submit Button -->
+      <div class="d-flex justify-content-end">
+        <button type="submit" class="btn btn-primary" (click)="onSubmit()">
+          {{ isEdit ? "Edit" : "Create" }}
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
